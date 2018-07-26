@@ -26,25 +26,26 @@
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabLayout"
-            app:tabMode="fixed"
-            android:layout_below="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
             android:background="?attr/colorPrimary"
-            app:elevation="0dp"
-            app:tabTextColor="#d3d3d3"
             android:minHeight="?attr/actionBarSize"
-            >
+            app:elevation="0dp"
+            app:tabGravity="fill"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabTextColor="#d3d3d3">
 
             <android.support.design.widget.TabItem
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Left" />
+                android:text="testeteste" />
 
             <android.support.design.widget.TabItem
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Right" />
+                android:text="testeteste" />
 
         </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>
@@ -55,7 +56,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:nestedScrollingEnabled="true"
         />
 
 </android.support.design.widget.CoordinatorLayout>
